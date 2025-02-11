@@ -6,7 +6,7 @@ Repository for Interview Questions Related to JS, HTML, CSS, React JS, Redux, Ta
 
 <p>Write a javascript function to get the total of given arguments like total(2,3,4,5)(4,5,6)</p>
 
-```
+```js
     function getTotal(...args) {
         let sum = 0;
         for (let i = 0; i < args.length; i++) {
@@ -33,7 +33,8 @@ const values = [“pencil”, “pen”, “sharpener”, “pen”, “pencil�
 
 const output = [{ pencil: 2 }, { pen: 2 }, { sharpener: 1 }];
 
-```
+```js
+
 function CountArrayValues(arr) {
   let obj = {};
   let result = [];
@@ -58,7 +59,8 @@ console.log(CountArrayValues(values));
 </p>
 
 
-```
+```js
+
 function DuplicateElementPair(arr) {
   let result = [];
   let obj = {};
@@ -82,7 +84,8 @@ console.log(DuplicateElementPair(input));
 </p>
 
 
-```
+```js
+
 function SortArray(arr) {
   for (let i = 0; i < arr.length; i++) {
     for (let j = 0; j < arr.length; j++) {
@@ -107,7 +110,8 @@ console.log(SortArray([9,41,52,6,14,85,14]));
     output return [[0,1][5,6]];
 </p>
 
-```
+```js
+
 let result1 = [];
 function SumByTarget(arr, target) {
   for (let i = 0; i < arr.length; i++) {
@@ -128,7 +132,8 @@ console.log(SumByTarget(input, target));
     Write the javascript method to the flat array.
 </p>
 
-```
+```js
+
     const flatten = (arr) => {
       const result = [];
       arr.forEach((item) => {
