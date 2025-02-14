@@ -3,8 +3,19 @@
 Repository for Interview Questions Related to JS, HTML, CSS, React JS, Redux, Tailwind, API Integration etc.
 
 <h1>HTML Interview Questions</h1>
+<p> What are the semantic tags available within HTML ?</p>
 
-<p> What are the symentic tags available within HTML ?</p>
+```html
+<article> <aside> <details> <figcaption> <figure> <footer> <form> <header> <main> <mark> <nav> <section><summary><time>
+```
+
+<p>Can we use Header and Footer semantic tag more than once in single HTML Document ?</p>
+
+Answer is <b>Yes</b>, You can. We can only use ```<main> ``` once per html page but every section or article can have its own header, footer and other semantic tags.
+
+<p>What is the difference between HTML and HTML5 Doctype ?</p>
+
+<h1>CSS Interview Questions</h1>
 
 <h1>Javascript Programms</h1>
 
