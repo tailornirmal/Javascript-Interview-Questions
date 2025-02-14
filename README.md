@@ -2,27 +2,30 @@
 
 Repository for Interview Questions Related to JS, HTML, CSS, React JS, Redux, Tailwind, API Integration etc.
 
+<h1>HTML Interview Questions</h1>
+
+<p> What are the symentic tags available within HTML ?</p>
+
 <h1>Javascript Programms</h1>
 
 <p>Write a javascript function to get the total of given arguments like total(2,3,4,5)(4,5,6)</p>
 
 ```js
-    function getTotal(...args) {
-        let sum = 0;
-        for (let i = 0; i < args.length; i++) {
-            sum += args[i];
-        }
+function getTotal(...args) {
+  let sum = 0;
+  for (let i = 0; i < args.length; i++) {
+    sum += args[i];
+  }
 
-        return function (...ar) {
-            for (let i = 0; i < ar.length; i++) {
-            sum += ar[i];
-            }
-            return sum;
-        };
+  return function (...ar) {
+    for (let i = 0; i < ar.length; i++) {
+      sum += ar[i];
     }
+    return sum;
+  };
+}
 
-    console.log(total(2, 3, 4, 5)(4, 5, 6)); // Output 29
-
+console.log(total(2, 3, 4, 5)(4, 5, 6)); // Output 29
 ```
 
 <p>Write a javascript function to get a count of repeated items in an array in key-value </p>
@@ -34,7 +37,6 @@ const values = [“pencil”, “pen”, “sharpener”, “pen”, “pencil�
 const output = [{ pencil: 2 }, { pen: 2 }, { sharpener: 1 }];
 
 ```js
-
 function CountArrayValues(arr) {
   let obj = {};
   let result = [];
@@ -58,9 +60,7 @@ console.log(CountArrayValues(values));
     output = [2,3]
 </p>
 
-
 ```js
-
 function DuplicateElementPair(arr) {
   let result = [];
   let obj = {};
@@ -76,16 +76,13 @@ function DuplicateElementPair(arr) {
 
 console.log(DuplicateElementPair(input));
 // output - [2,3]
-
 ```
 
 <p>
     Write a Javascript function to sort an array without using the sort method. Implement bubble sort.
 </p>
 
-
 ```js
-
 function SortArray(arr) {
   for (let i = 0; i < arr.length; i++) {
     for (let j = 0; j < arr.length; j++) {
@@ -99,7 +96,7 @@ function SortArray(arr) {
   return arr;
 }
 
-console.log(SortArray([9,41,52,6,14,85,14]));
+console.log(SortArray([9, 41, 52, 6, 14, 85, 14]));
 ```
 
 <p>
@@ -111,7 +108,6 @@ console.log(SortArray([9,41,52,6,14,85,14]));
 </p>
 
 ```js
-
 let result1 = [];
 function SumByTarget(arr, target) {
   for (let i = 0; i < arr.length; i++) {
@@ -125,7 +121,6 @@ function SumByTarget(arr, target) {
 }
 
 console.log(SumByTarget(input, target));
-
 ```
 
 <p>
@@ -133,21 +128,19 @@ console.log(SumByTarget(input, target));
 </p>
 
 ```js
-
-    const flatten = (arr) => {
-      const result = [];
-      arr.forEach((item) => {
-        if (Array.isArray(item)) {
-          result.push(...flatten(item));
-        } else {
-          result.push(item);
-        }
-      });
-      return result;
-    };
+const flatten = (arr) => {
+  const result = [];
+  arr.forEach((item) => {
+    if (Array.isArray(item)) {
+      result.push(...flatten(item));
+    } else {
+      result.push(item);
+    }
+  });
+  return result;
+};
 
 // Usage
 const nested = [1, 2, 3, [4, 5, [6, 7], 8, 9]];
 console.log(flatten(nested)); // [1, 2, 3, 4, 5, 6, 7, 8, 9]
-
 ```
